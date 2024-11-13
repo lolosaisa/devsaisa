@@ -1,4 +1,4 @@
-import { css, FlattenSimpleInterpolation } from 'styled-components';
+import { css } from 'styled-components';
 
 const button = css`
   color: var(--green);
@@ -23,17 +23,17 @@ const button = css`
   }
 `;
 
-interface Mixins {
-  flexCenter: FlattenSimpleInterpolation;
-  flexBetween: FlattenSimpleInterpolation;
-  link: FlattenSimpleInterpolation;
-  inlineLink: FlattenSimpleInterpolation;
-  button: FlattenSimpleInterpolation;
-  smallButton: FlattenSimpleInterpolation;
-  bigButton: FlattenSimpleInterpolation;
-  boxShadow: FlattenSimpleInterpolation;
-  fancyList: FlattenSimpleInterpolation;
-  resetList: FlattenSimpleInterpolation;
+export interface Mixins {
+  flexCenter: ReturnType<typeof css>;
+  flexBetween: ReturnType<typeof css>;
+  link: ReturnType<typeof css>;
+  inlineLink: ReturnType<typeof css>;
+  button: ReturnType<typeof css>;
+  smallButton: ReturnType<typeof css>;
+  bigButton: ReturnType<typeof css>;
+  boxShadow: ReturnType<typeof css>;
+  fancyList: ReturnType<typeof css>;
+  resetList: ReturnType<typeof css>;
 }
 
 const mixins: Mixins = {
