@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Navbar = () => (
   <nav className="flex justify-between items-center py-4 px-8">
-    <h1 className="text-green font-bold text-lg">B</h1>
+    <h1 className="text-green font-bold text-lg">S</h1>
     <div className="flex space-x-6 text-lightest-slate font-mono text-sm ">
       <Link href="#about" className='hover:text-teal-200 font-extralight'>1. About</Link>
       <Link href="#experience" className='hover:text-teal-200'>2. Experience</Link>

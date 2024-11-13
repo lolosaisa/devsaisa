@@ -3,10 +3,15 @@ import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from 'utils';
+import { navDelay, loaderDelay } from '../app/utils/index';
 //import { navDelay, loaderDelay } from '../utils/constants';
 
-import { usePrefersReducedMotion } from '@hooks';
+//import usePrefersReducedMotion  from '@hooks/UsePrefersReducedMotion';
+//import { usePrefersReducedMotion } from '@hooks';
+
+import usePrefersReducedMotion from '@hooks/UsePrefersReducedMotion';
+
+
 // Define types for any untyped imported variables
 
 const StyledHeroSection = styled.section`
