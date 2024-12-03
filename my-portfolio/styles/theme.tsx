@@ -1,5 +1,5 @@
 // theme.ts
-import mixins { Mixins } from './mixins';
+import mixins, { Mixins } from './mixins';
 
 interface Breakpoints {
   mobileS: string;
